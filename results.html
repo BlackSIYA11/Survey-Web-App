@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="results.html" class="active">Results</a></li>
+        </ul>
+    </nav>
+
+    
+     <main>
+        <h1>Survey Results</h1>
+       <ul>
+            <li><strong>Total Surveys Completed:</strong> <?= $total ?></li>
+            <li><strong>Average Age:</strong> <?= $average_age ?></li>
+            <li><strong>Oldest Person:</strong> <?= $oldest ?> years old</li>
+            <li><strong>Youngest Person:</strong> <?= $youngest ?> years old</li>
+
+            <br><br>
+
+            <li><strong>Percentage of People Who Like Pizza:</strong> <?= $pizza_percentage ?>%</li>
+            <li><strong>Percentage of People Who Like Pasta:</strong> <?= $pasta_percentage ?>%</li>
+            <li><strong>Percentage of People Who Like Pap and Wors:</strong> <?= $pap_and_wors_percentage ?>%</li>
+
+            <br><br>
+
+            <li><strong>Average rating for watching movies:</strong> <?= $avg_watchmovies ?></li>
+            <li><strong>Average rating for listening to radio:</strong> <?= $avg_listentoradio ?></li>
+            <li><strong>Average rating for eating out:</strong> <?= $avg_eatout ?></li>
+            <li><strong>Average rating for watching TV:</strong> <?= $avg_watchtv ?></li>
+        </ul>
+    </main>
+
+</body>
+</html>

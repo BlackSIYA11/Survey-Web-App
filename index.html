@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <script src="scripts.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>HOME</title>
+</head>
+<body>
+
+  <nav>
+        <ul>
+           <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+           <li><a href="results.php" class="nav-link active"><i class="fas fa-chart-bar"></i> Results</a></li>
+        </ul>
+    </nav>
+
+    <h1> Personal Details</h1>
+
+<form id="myForm" action="submit_survey.php" method="POST" onsubmit="return handleSubmit(event)">
+
+  <label for="fname">Full Name:</label>
+  <input type="text" id="fname" name="full_name" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="DOB">Date of Birth:</label>
+  <input type="date" id="DOB" name="dob" required><br><br>
+
+  <label for="cellNo">Cellphone Number:</label>
+  <input type="tel" id="cellNo" name="phone" pattern="[0-9]{10}" required><br><br>
+
+
+  
+
+   <p>What is your favourite food?</p>
+   <input type="checkbox" id="food1" name="food[]" value="Pizza">
+   <label for="food1"> Pizza</label><br>
+   <input type="checkbox" id="food2" name="food[]" value="Pasta">
+   <label for="food2"> Pasta</label><br>
+   <input type="checkbox" id="food3" name="food[]" value="Pap and Wors">
+   <label for="food3"> Pap and Wors</label><br>
+   <input type="checkbox" id="food4" name="food[]" value="Other">
+   <label for="food4"> Other</label><br><br>
+
+
+  <p>Please rate your level of agreement on a scale of 1 to 5, with 1 being "strongly agree" and 5 being "strongly disagree"</p>
+
+  <table style="width:100%; border-collapse: collapse;" border="1">
+  <tr>
+    <th>Statement</th>
+    <th> Strongly Agree</th>
+    <th>Agree</th>
+    <th> Neutral</th>
+    <th> Disagree</th>
+    <th> Strongly Disagree</th>
+  </tr>
+  <tr>
+    <td>I like to watch movies</td>
+    <td><input type="radio" name="movies" value="1" required></td>
+    <td><input type="radio" name="movies" value="2"></td>
+    <td><input type="radio" name="movies" value="3"></td>
+    <td><input type="radio" name="movies" value="4"></td>
+    <td><input type="radio" name="movies" value="5"></td>
+  </tr>
+  <tr>
+    <td>I like to listen to radio</td>
+    <td><input type="radio" name="radio" value="1" required></td>
+    <td><input type="radio" name="radio" value="2"></td>
+    <td><input type="radio" name="radio" value="3"></td>
+    <td><input type="radio" name="radio" value="4"></td>
+    <td><input type="radio" name="radio" value="5"></td>
+  </tr>
+  <tr>
+    <td>I like to eat out</td>
+    <td><input type="radio" name="eatout" value="1" required></td>
+    <td><input type="radio" name="eatout" value="2"></td>
+    <td><input type="radio" name="eatout" value="3"></td>
+    <td><input type="radio" name="eatout" value="4"></td>
+    <td><input type="radio" name="eatout" value="5"></td>
+  </tr>
+  <tr>
+    <td>I like to watch TV</td>
+    <td><input type="radio" name="tv" value="1" required></td>
+    <td><input type="radio" name="tv" value="2"></td>
+    <td><input type="radio" name="tv" value="3"></td>
+    <td><input type="radio" name="tv" value="4"></td>
+    <td><input type="radio" name="tv" value="5"></td>
+  </tr>
+</table>
+
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
