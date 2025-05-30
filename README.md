@@ -39,6 +39,6 @@ Frontend: HTML5, CSS3, JavaScript
 
 Backend: PHP 7+
 
-Database: MySQL / MariaDB
+Database: MySQL
 
-Server: Apache (e.g., via WAMP, XAMPP)
+Server: Apache ( via WAMP)
