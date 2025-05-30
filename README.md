@@ -33,7 +33,7 @@ Automatic redirect to home page after submission
 
 Form reset/clear functionality upon submission
 
-Technologies Used
+Technologies Used:
 
 Frontend: HTML5, CSS3, JavaScript
 
@@ -42,3 +42,19 @@ Backend: PHP 7+
 Database: MySQL
 
 Server: Apache ( via WAMP)
+
+Usage:
+
+Fill out the survey form with valid information.
+
+Ensure at least one food choice is selected.
+
+Rate all lifestyle statements.
+
+Click Submit.
+
+After successful submission, you will see a thank-you message and be redirected to the home page.
+
+If validation fails, error messages will guide you to correct inputs.
+
+
