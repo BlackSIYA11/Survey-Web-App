@@ -1,5 +1,7 @@
-Survey Form Project
+**Survey Form Project**
+
 Overview
+
 This project is a web-based survey form built with HTML, CSS, and PHP. Users submit personal details, select their favorite foods, and rate various statements. The backend validates the input, stores responses in a MySQL database, and provides user feedback with automatic redirect after submission.
 
 Features
@@ -32,6 +34,7 @@ Automatic redirect to home page after submission
 Form reset/clear functionality upon submission
 
 Technologies Used
+
 Frontend: HTML5, CSS3, JavaScript
 
 Backend: PHP 7+
